@@ -11,7 +11,7 @@ export class ParserService
             res.clientId =req.substring(18,21) +"-"+req.substring(21) ;
             return res;
         }else{
-            throw "Invalid Input String";
+            throw new Error("Invalid Input String");
         }
     }
 }
